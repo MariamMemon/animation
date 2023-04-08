@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Task</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image: url(images/animation\ background.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .carone{
+        height: 100px;
+        width: 100px;
+        margin-top: 85vh;
+        animation-name: margin;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+    .cartwo{
+        height: 100px;
+        width: 100px;
+        margin-top: 85vh; 
+        animation-name: margin2;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+   @keyframes margin{
+        0%{
+            margin-left: -70px;
+            transform: none;
+        }
+        90%{
+            margin-left: 583px;
+            transform: none;
+        }
+        100%{
+            margin-left: 583px;
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes margin2{
+        0%{
+            margin-right: -70px;
+            transform: none;
+        }
+        90%{
+            margin-right: 583px;
+            transform: none;
+        }
+        100%{
+            margin-right: 583px;
+            /* transform: rotate(180deg); */
+        }
+    }
+</style>
+<body>
+    <div class="container">
+      
+            <img class="carone" src="images/car 6.jpg" alt="car one">
+      
+        
+            <img class="cartwo" src="images/car5.jpg" alt="car two">
+
+        
+    </div>
+    
+</body>
+</html>
